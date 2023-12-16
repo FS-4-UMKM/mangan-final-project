@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Icon } from '@iconify/react';
 import Hamburger from 'hamburger-react';
 import Sidebar from '../components/sidebar';
+import { NavLink } from 'react-router-dom';
+
 
 function PesananMasuk() {
     const [isOpen, setIsOpen] = useState(true);
@@ -55,7 +57,8 @@ function PesananMasuk() {
                             <p>: Menunggu Konfirmasi</p>
                         </div>
                         <div className='flex gap-5 mt-4'>
-                            <button className='md:w-[104px] md:h-[30px] p-1 bg-red-600 text-white rounded-lg'>Detail</button>
+                            <NavLink to='/detail-pesanan' className='md:w-[104px] md:h-[30px] p-1 bg-red-600 text-white rounded-lg'>Detail
+                            </NavLink>
                             <button className='md:w-[104px] md:h-[30px] p-1 bg-accent-200 text-white rounded-lg'>Terima</button>
                         </div>
                     </div>
