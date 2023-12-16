@@ -6,6 +6,7 @@ import PaketList from "./paket-list"
 import RegistesSeller from "./registerSeller"
 import Keuangan from "./keuangan"
 import PesananMasuk from "./pesanan-masuk"
+import DetailPesanan from "./detail.pesanan.jsx"
 
 
 function Seller() {
@@ -18,6 +19,7 @@ function Seller() {
                 <Route path="/register-seller" element={<RegistesSeller />} />
                 <Route path="/payment" element={<Keuangan />} />
                 <Route path="/pesanan-masuk" element={<PesananMasuk />} />
+                <Route path="/detail-pesanan" element={<DetailPesanan />} />
             </Routes>
         </ProductProvider>
     )
