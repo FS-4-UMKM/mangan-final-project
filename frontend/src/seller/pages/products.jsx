@@ -19,7 +19,9 @@ function Products() {
                     <Hamburger size={20} easing="ease-in" color='black' toggled={isOpen} toggle={setIsOpen} />
                 </button>
             </div>
-            <ProductList />
+            <div className='h-full overflow-auto w-full '>
+                <ProductList />
+            </div>
         </div >
     )
 }

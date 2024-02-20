@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Icon } from '@iconify/react';
+import { NavLink } from 'react-router-dom';
 
 function PelangganSidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,8 +33,8 @@ function PelangganSidebar() {
             ${isOpen ? 'opacity-100 py-4 max-h-[100vh] translate-y-2 ' : 'opacity-0 max-h-0 -translate-y-2'}`}>
                 <p className='pb-2 text-[10px] md:text-base transition-colors duration-300  hover:font-bold cursor-pointer border-b-[1px] border-white'>
                     Chat</p>
-                <p className='pb-2 text-[10px] md:text-base transition-colors duration-300  hover:font-bold cursor-pointer border-b-[1px] border-white'>
-                    Ulasan</p>
+                <NavLink to='/review/seller' className='pb-2 text-[10px] md:text-base transition-colors duration-300  hover:font-bold cursor-pointer border-b-[1px] border-white'>
+                    Ulasan</NavLink>
             </div>
             {/* dropdown */}
         </div>

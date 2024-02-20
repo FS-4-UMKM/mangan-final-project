@@ -30,7 +30,7 @@ function ProductInput() {
 
 
     return (
-        <div className="space-y-3" >
+        <div className="space-y-3 " >
             <div className='space-y-2 flex flex-col '>
                 <label className='font-semibold md:text-base text-accent-200'>Nama Paket </label>
                 <input placeholder='masukan nama paket'
@@ -74,10 +74,11 @@ function ProductInput() {
                 >Simpan
                 </button>
             </div>
+
             {isFormVisible && (
                 <FormAdd />
             )}
-        </div>
+        </div >
     )
 }
 
